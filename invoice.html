@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vintu</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h2 class="logo"><a href="index.html"><img src="images/logo.png" alt="" height="60px" width="100px"></a></h2>
+        <nav id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="index.html">Sign in</a></li>
+            <li><a href="index.html">Sign up</a></li>
+
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <div class="container" onload="onLoad()">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 padding">
+                    <div class="card">
+                        <div class="card-header p-4">
+                            <a class="pt-2 d-inline-block" href="index.html" data-abc="true">Vintu.co.zm</a>
+                            <div class="float-right">
+                                <h3 class="mb-0">Invoice #BBB10234</h3>
+                                Date: xx xxxx,20xx
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-sm-6">
+                                    <h5 class="mb-3">From:</h5>
+                                    <h3 class="text-dark mb-1">Seller</h3>
+                                    <div>xxxx, xxxx Street</div>
+                                    <div>xxxx,xxxx xxxx</div>
+                                    <div>Email: xxxx@xxxx.com</div>
+                                    <div>Phone: +xxx xx xxxxxxx</div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h5 class="mb-3">To:</h5>
+                                    <h3 class="text-dark mb-1">Buyer</h3>
+                                    <div>xxxx, xxxx Street</div>
+                                    <div>xxxx, xxxx, xxxx</div>
+                                    <div>Email: xxxx@xxxx.com</div>
+                                    <div>Phone: +xxx xx xxxxxxx</div>
+                                </div>
+                            </div>
+                            <div class="table-responsive-sm">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="center">#</th>
+                                            <th>Item</th>
+                                            <th>Description</th>
+                                            <th class="right">Price</th>
+                                            <th class="center">Qty</th>
+                                            <th class="right">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="center">1</td>
+                                            <td class="left strong" id="item"></td>
+                                            <td class="left">xxxx</td>
+                                            <td class="right" id="price"></td>
+                                            <td class="center">1</td>
+                                            <td class="right" id="total"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">2</td>
+                                            <td class="left">xxxx</td>
+                                            <td class="left">xxxx</td>
+                                            <td class="right">xxxx</td>
+                                            <td class="center">xxxx</td>
+                                            <td class="right">xxxx</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">3</td>
+                                            <td class="left">xxxx</td>
+                                            <td class="left">xxxx</td>
+                                            <td class="right">xxxx</td>
+                                            <td class="center">xxxx</td>
+                                            <td class="right">xxxx</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">4</td>
+                                            <td class="left">xxxx</td>
+                                            <td class="left">xxxx</td>
+                                            <td class="right">xxxx</td>
+                                            <td class="center">xxxx</td>
+                                            <td class="right">xxxx</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-5">
+                                </div>
+                                <div class="col-lg-4 col-sm-5 ml-auto">
+                                    <table class="table table-clear">
+                                        <tbody>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">Subtotal</strong>
+                                                </td>
+                                                <td class="right">K0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">Discount (20%)</strong>
+                                                </td>
+                                                <td class="right">K0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">VAT (%)</strong>
+                                                </td>
+                                                <td class="right">K0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">Total</strong> </td>
+                                                <td class="right">
+                                                    <strong class="text-dark">K0.00</strong>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <p class="mb-0">Vintu.co.zm, 14234 Woodlands, Lusaka, Zambia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center">
+            <!-- Footer links -->
+            <div class="row text-center mt-1 pb-1">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-1">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Vintu</h6>
+                    <p>All the things you need</p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-6 col-xl-4 mx-auto mt-1">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <img class="icon-img" src="images/icons/Marker_48px.png" alt="Location">14234 Woodlands
+                        <br>Lusaka, Zambia</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/mail.png" alt="Mail">info@vintu.co.zm</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 97 7125323</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 96 6125323</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+            <hr>
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!--Copyright-->
+                    <p class="text-md-left">© 2020 Copyright:
+                        <a href="#">
+                            <strong>Vintu</strong>
+                        </a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-8 ml-lg-12">
+                    <!-- Social buttons -->
+                    <div class="text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"><img class="icon-img" src="images/icons/Facebook_48px.png" alt="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><img class="icon-img" src="images/icons/WhatsApp_48px.png" alt="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    </footer>
+    <!-- /Footer -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+    <script>
+        // Retrieve
+        document.getElementById("item").innerHTML = localStorage.getItem("prod_name");
+        document.getElementById("price").innerHTML = localStorage.getItem("prod_price");
+        document.getElementById("total").innerHTML = localStorage.getItem("prod_total");
+
+        function onLoad() {
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            document.getElementById('item').innerHTML = data.name;
+        }
+    </script>
+    </script>
+</body>
+
+</html>

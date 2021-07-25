@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vintu</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h2 class="logo"><a href="index.html"><img src="images/logo.png" alt="" height="60px" width="100px"></a></h2>
+        <nav id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="index.html">Sign in</a></li>
+            <li><a href="index.html">Sign up</a></li>
+        </nav>
+    </header>
+    <!--Main-->
+    <div class="container">
+        <!--Section: Contact v.2-->
+        <section class="contact-page">
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                a matter of hours to help you.</p>
+            <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-md-12 mb-md-0 mb-6">
+                    <form id="contact-form" name="contact-form" action="" method="POST">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-crimson" onclick="validateForm();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+            </div>
+        </section>
+        <!--Section: Contact v.2-->
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center">
+            <!-- Footer links -->
+            <div class="row text-center mt-1 pb-1">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-1">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Vintu</h6>
+                    <p>All the things you need</p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-6 col-xl-4 mx-auto mt-1">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <img class="icon-img" src="images/icons/Marker_48px.png" alt="Location">14234 Woodlands <br>Lusaka, Zambia</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/mail.png" alt="Mail">info@vintu.co.zm</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 97 7125323</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 96 6125323</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+            <hr>
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!--Copyright-->
+                    <p class="text-md-left">© 2020 Copyright:
+                        <a href="#">
+                            <strong>Vintu</strong>
+                        </a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-8 ml-lg-12">
+                    <!-- Social buttons -->
+                    <div class="text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"><img class="icon-img" src="images/icons/Facebook_48px.png" alt="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><img class="icon-img" src="images/icons/WhatsApp_48px.png" alt="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    </footer>
+    <!-- /Footer -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+</body>
+
+</html>

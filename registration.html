@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vintu</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h2 class="logo"><a href="index.html"><img src="images/logo.png" alt="" height="60px" width="100px"></a></h2>
+        <nav id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="index.html">Sign in</a></li>
+            <li><a href="index.html">Sign up</a></li>
+
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <section class="contact-page">
+                    <h2>Register</h2>
+                    <!-- Default form register -->
+                    <form class="text-center border border-light p-5" method="post" onSubmit="return validateRegisterForm()" id="registrationForm" action="index.html">
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <input type="text" id="registerFormFirstName" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <!-- Last name -->
+                                <input type="text" id="registerFormLastName" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <!-- E-mail -->
+                        <input type="email" id="registerFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <!-- NRC -->
+                        <input type="text" id="registerFormNRC" class="form-control mb-4" placeholder="NRC">
+                        <select class="browser-default custom-select mb-2" name="DOBDay" id="dobDay">
+                            <option value="" disabled selected> - Date of birth Day - </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select class="browser-default custom-select mb-2" name="DOBMonth" id="dobMonth">
+                            <option value="" disabled selected> - Date of birth Month - </option>
+                            <option value="January">January</option>
+                            <option value="Febuary">Febuary</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select class="browser-default custom-select mb-4" name="DOBYear" id="dobYear">
+                            <option value="" disabled selected> - Date of birth Year - </option>
+                            <!--<option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>-->
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                            <option value="1979">1979</option>
+                            <option value="1978">1978</option>
+                            <option value="1977">1977</option>
+                            <option value="1976">1976</option>
+                            <option value="1975">1975</option>
+                            <option value="1974">1974</option>
+                            <option value="1973">1973</option>
+                            <option value="1972">1972</option>
+                            <option value="1971">1971</option>
+                            <option value="1970">1970</option>
+                            <option value="1969">1969</option>
+                            <option value="1968">1968</option>
+                            <option value="1967">1967</option>
+                            <option value="1966">1966</option>
+                            <option value="1965">1965</option>
+                            <option value="1964">1964</option>
+                            <option value="1963">1963</option>
+                            <option value="1962">1962</option>
+                            <option value="1961">1961</option>
+                            <option value="1960">1960</option>
+                        </select>
+                        <!-- Residential Address -->
+                        <input type="text" id="registerFormResidential" class="form-control mb-4" placeholder="Residential address">
+                        <!-- Postal Address -->
+                        <input type="text" id="registerFormPostal" class="form-control mb-4" placeholder="Postal address">
+                        <select class="browser-default custom-select mb-4" name="town" id="town">
+                            <option value="" disabled selected>Choose your town</option>
+                            <option value="australia">Lusaka</option>
+                            <option value="canada">Livingstone</option>
+                            <option value="usa">Ndola</option>
+                            <option value="usa">Chipata</option>
+                            <option value="usa">Solwezi</option>
+                            <option value="usa">Luapula</option>
+                            <option value="usa">Kabwe</option>
+                            <option value="usa">Mansa</option>
+                        </select>
+                        <!-- Password -->
+                        <input type="password" id="registerFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                            At least 8 characters and 1 digit
+                        </small>
+                        <!-- Phone number -->
+                        <input type="text" id="registerPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                        <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                            Optional - for two step authentication
+                        </small>
+                        <select class="browser-default custom-select mb-4" id="payMethod" name="payment-method">
+                            <option value="" disabled selected>Choose your payment method</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="visa">Visa</option>
+                            <option value="master-card">Master Card</option>
+                        </select>
+                        <!-- Newsletter -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                            <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+                        </div>
+                        <!-- Sign up button -->
+                        <button class="btn btn-info my-4 btn-block" type="submit">Register</button>
+                        <hr>
+                        <!-- Terms of service -->
+                        <p>By clicking
+                            <em>Register</em> you agree to our
+                            <a href="" target="_blank">terms of service</a>
+                    </form>
+                    <!-- Default form register -->
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center">
+            <!-- Footer links -->
+            <div class="row text-center mt-1 pb-1">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-1">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Vintu</h6>
+                    <p>All the things you need</p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-6 col-xl-4 mx-auto mt-1">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <img class="icon-img" src="images/icons/Marker_48px.png" alt="Location">14234 Woodlands <br>Lusaka, Zambia</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/mail.png" alt="Mail">info@vintu.co.zm</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 97 7125323</p>
+                    <p>
+                        <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 96 6125323</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+            <hr>
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!--Copyright-->
+                    <p class="text-md-left">© 2020 Copyright:
+                        <a href="#">
+                            <strong>Vintu</strong>
+                        </a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-8 ml-lg-12">
+                    <!-- Social buttons -->
+                    <div class="text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"><img class="icon-img" src="images/icons/Facebook_48px.png" alt="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><img class="icon-img" src="images/icons/WhatsApp_48px.png" alt="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    </footer>
+    <!-- /Footer -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+</body>
+
+</html>

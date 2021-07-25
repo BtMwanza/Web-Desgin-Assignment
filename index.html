@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vintu</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Header-->
+
+  <header>
+    <h2 class="logo"><a href="index.html"><img src="images/logo.png" alt="" height="60px" width="100px"></a></h2>
+    <nav id="nav">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="registration.html">Register</a></li>
+
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-img"></div>
+    <h1 class="main-banner slideInLeft">VINTU</h1>
+    <p class="sub-banner pulse slideInRight hoverable">All the things you need</p>
+
+    <!-- Buttons -->
+    <div class="slideInUp">
+
+      <!-- Sign In -->
+      <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <form class="modal-content" method="post" onSubmit="return login()" id="modal-LoginForm">
+            <div class="modal-header text-center black-text">
+              <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="defaultForm-email" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="defaultForm-pass" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+              </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="" class="btn btn-crimson btn-rounded mb-2" data-toggle="modal" data-target="#modalLoginForm">Sign in</a>
+      </div>
+      <!-- End Sign In -->
+
+      <!-- Sign Up -->
+      <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <form class="modal-content" method="post" onSubmit="return signUp()" id="modal-RegisterForm">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold black-text">Sign up</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="orangeForm-name" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+              </div>
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="orangeForm-email" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="orangeForm-pass" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+              </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default" type="submit">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="" class="btn btn-crimson btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Sign Up</a>
+      </div>
+      <!-- End Sign Up -->
+
+
+    </div>
+  </section>
+
+
+  <!--Main-->
+  <main>
+    <div class="container">
+      <div class="row">
+        <section class="products-area" id="products">
+          <h3 class="product-title">Products</h3>
+          <ul class="product-content">
+            <li>
+              <h4>Accessories</h4>
+
+              <img class="hoverable" src="images/s-l225 (1).jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+
+            </li>
+
+            <li>
+              <h4>Wearables</h4>
+
+              <img class="hoverable" src="images/s-l225 (2).jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+            </li>
+
+            <li>
+              <h4>Skin Care</h4>
+
+              <img class="hoverable" src="images/body-scrub-mask.jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+            </li>
+
+            <li>
+              <h4>Mobile</h4>
+
+              <img class="hoverable" src="images/phone.jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+            </li>
+
+            <!-- Next 4-->
+            <li>
+              <h4>Laptop</h4>
+
+              <img class="hoverable" src="images/xiaomi air 13 ips laptop.jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+            </li>
+
+            <li>
+              <h4>Fashion</h4>
+
+              <img class="hoverable" src="images/watch.jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+            </li>
+
+            <li>
+              <h4>Furniture</h4>
+
+              <img class="hoverable" src="images/s-l300 (1).jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+            </li>
+
+            <li>
+              <h4>Tools</h4>
+              <img class="hoverable" src="images/s-l300.jpg" alt="">
+
+              <p><a href="products.html">See more</a></p>
+            </li>
+
+          </ul>
+        </section>
+
+
+        <section class="about-section" id="about">
+          <h2>About us</h2>
+          <p>Vintu is an online store where you can find anything you need 24/7.<br>
+          Some of the products on display are provided by other parties in whom we trust to deliver as agreed on.
+        Our products are full vetted before being made available, to ensure the best for our customers, and we have affordable prices based on our customers needs. </p>
+
+          <p>Vintu values the trust of its customers and strives to maintain that trust. Customers' details are safely kept and can only be viewed by Vintu and the customer owning the information, with the exception of very sensitive details that only our customers have access to.
+          </p>
+        </section>
+
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small special-color pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center">
+
+      <!-- Footer links -->
+      <div class="row text-center mt-1 pb-1">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-1">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Vintu</h6>
+          <p>All the things you need</p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-6 col-xl-4 mx-auto mt-1">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <img class="icon-img" src="images/icons/Marker_48px.png" alt="Location">14234 Woodlands <br>Lusaka, Zambia</p>
+          <p>
+            <img class="icon-img" src="images/icons/mail.png" alt="Mail">info@vintu.co.zm</p>
+          <p>
+            <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 97 7125323</p>
+          <p>
+            <img class="icon-img" src="images/icons/Phone_48px.png" alt="Phone">+206 96 6125323</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+          <!--Copyright-->
+          <p class="text-md-left">© 2020 Copyright:
+            <a href="#">
+              <strong>Vintu</strong>
+            </a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-8 ml-lg-12">
+
+          <!-- Social buttons -->
+          <div class="text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="#"><img class="icon-img" src="images/icons/Facebook_48px.png" alt="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img class="icon-img" src="images/icons/WhatsApp_48px.png" alt="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+  </footer>
+  <!-- /Footer -->
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script type="text/javascript" src="js/validation.js"></script>
+
+</body>
+
+</html>
